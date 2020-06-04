@@ -1,1 +1,4 @@
 # quartz-demo
+刚开始学习使用GitHub写一些博客
+1、Quartz我们在用Spring boot开发过程中一般使用的是Spring Scheduler方式对于服务多个服务器部署的时候，产生分布式问题。
+2、Quartz-Cluster官方推荐实现方式通过db方式解决分布式定时任务问题。写的一个小demo。
