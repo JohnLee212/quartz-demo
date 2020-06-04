@@ -1,0 +1,27 @@
+server:
+  context-path: /quartz-cluster2
+  port: 8090
+spring:
+  datasource:
+    url: jdbc:mysql://47.114.94.33:3306/nacos?useSSL=false&serverTimezone=UTC
+    username: root
+    password: qingshi@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    max-active: 1000
+    max-idle: 20
+    min-idle: 5
+    initial-size: 10
+
+logging:
+  level:
+    com:
+      favorites: DEBUG
+    org:
+      springframework.web: INFO
+      hibernate: ERROR
+  file:
+    path: /user/local/log
+mybatis:
+  mapper-locations:
+    - classpath:mapping/*Mapper.xml
+  type-aliases-package: com.example.demo.domain
